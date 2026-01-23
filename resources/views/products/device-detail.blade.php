@@ -33,7 +33,7 @@
         <div class="device-detail-wrapper">
             <div class="device-image-section">
                 <div class="device-main-image">
-                    <img src="{{ $device['image'] }}" alt="{{ $device['name'] }}" class="device-detail-image" onerror="this.style.display='none'">
+                    <img src="{{ $device['image'] }}" alt="{{ $device['name'] }}" class="device-detail-image" onerror="this.onerror=null; this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'400\' height=\'400\'%3E%3Crect width=\'400\' height=\'400\' fill=\'%23F5F5F5\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' text-anchor=\'middle\' dy=\'.3em\' fill=\'%23999\' font-family=\'sans-serif\' font-size=\'18\'%3EImage Not Available%3C/text%3E%3C/svg%3E';">
                 </div>
             </div>
 

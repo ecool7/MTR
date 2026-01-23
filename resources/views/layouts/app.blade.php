@@ -10,11 +10,21 @@
 <body>
     <nav class="navbar">
         <div class="container">
-            <div class="nav-links">
-                <a href="{{ route('home') }}" class="nav-link {{ request()->routeIs('home') ? 'active' : '' }}">Home</a>
-                <a href="{{ route('about') }}" class="nav-link {{ request()->routeIs('about') ? 'active' : '' }}">About Us</a>
-                <a href="{{ route('products') }}" class="nav-link {{ request()->routeIs('products') ? 'active' : '' }}">Products</a>
-                <a href="{{ route('contacts') }}" class="nav-link {{ request()->routeIs('contacts*') ? 'active' : '' }}">Contacts</a>
+            <div class="navbar-content">
+                <a href="{{ route('home') }}" class="logo-link">
+                    <img 
+                        src="{{ asset('images/logo.png') }}" 
+                        alt="MTR Logo" 
+                        class="logo"
+                        onerror="if (!this.dataset.fallback) { this.dataset.fallback = 'true'; this.src='{{ asset('images/logo.jpg') }}'; }"
+                    >
+                </a>
+                <div class="nav-links">
+                    <a href="{{ route('home') }}" class="nav-link {{ request()->routeIs('home') ? 'active' : '' }}">Home</a>
+                    <a href="{{ route('about') }}" class="nav-link {{ request()->routeIs('about') ? 'active' : '' }}">About Us</a>
+                    <a href="{{ route('products') }}" class="nav-link {{ request()->routeIs('products') ? 'active' : '' }}">Products</a>
+                    <a href="{{ route('contacts') }}" class="nav-link {{ request()->routeIs('contacts*') ? 'active' : '' }}">Contacts</a>
+                </div>
             </div>
         </div>
     </nav>

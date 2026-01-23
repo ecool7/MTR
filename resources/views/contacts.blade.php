@@ -21,12 +21,8 @@
                     <p>info@microwavetech.com</p>
                 </div>
                 <div class="contact-item">
-                    <strong>Phone:</strong>
-                    <p>+1 (555) 123-4567</p>
-                </div>
-                <div class="contact-item">
                     <strong>Address:</strong>
-                    <p>123 Technology Drive<br>Research Park, CA 94025<br>United States</p>
+                    <p>715 Kangtai Group Building, No. 222 Kefa Road,<br>Science & Technology Park, Nanshan District,<br>Shenzhen</p>
                 </div>
             </div>
         </div>
@@ -62,6 +58,9 @@
     </div>
 </div>
 @endsection
+
+
+
 
 
 

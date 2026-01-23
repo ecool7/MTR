@@ -23,7 +23,7 @@
             <a href="{{ route('products.device', ['category' => $categorySlug, 'device' => $device['id']]) }}" class="device-card-link">
                 <div class="device-card">
                     <div class="device-image-wrapper">
-                        <img src="{{ $device['image'] }}" alt="{{ $device['name'] }}" class="device-image" onerror="this.style.display='none'">
+                        <img src="{{ $device['image'] }}" alt="{{ $device['name'] }}" class="device-image" onerror="this.onerror=null; this.src='data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'200\' height=\'200\'%3E%3Crect width=\'200\' height=\'200\' fill=\'%23F5F5F5\'/%3E%3Ctext x=\'50%25\' y=\'50%25\' text-anchor=\'middle\' dy=\'.3em\' fill=\'%23999\' font-family=\'sans-serif\' font-size=\'14\'%3ENo Image%3C/text%3E%3C/svg%3E';">
                     </div>
                     <h3 class="device-name">{{ $device['name'] }}</h3>
                 </div>
@@ -37,6 +37,9 @@
     </div>
 </div>
 @endsection
+
+
+
 
 
 
